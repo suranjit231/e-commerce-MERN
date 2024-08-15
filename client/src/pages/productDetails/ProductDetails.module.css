@@ -1,0 +1,472 @@
+
+.productDtailsPageContainer{
+    width: 100%;
+    
+    display: flex;
+ 
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.loaderContainer{
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.leftContainer{
+    min-height: 250px;
+    flex: 1 1;
+    /* border: 1px solid green; */
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.mainImageBox{
+    width: 100%;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.imageController{
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    /* border: 1px solid maroon; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.imageController .imageView{
+    flex: 1;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.imageView img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.mainImageBox img{
+    width: 100%;
+     transform-style: preserve-3d;
+     perspective: 1000;
+     transition: 0.4s ease-in-out;
+}
+
+.mainImageBox img:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.rightContainer{
+    min-height: 320px;
+    flex: 1 1;
+    /* border: 1px solid rgb(128, 68, 0); */
+    min-width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+
+/* ============= style inner right container ===== */
+.rightNamaAndPriceDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* border: 1px solid red; */
+}
+
+.ratingDiv{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rightNamaAndPriceDiv h3{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 43);
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 43);
+}
+
+.ratingDiv p{
+    color: rgb(0, 0, 43);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sizeContainer{
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: auto;
+    padding: 6px 0px;
+    
+
+}
+
+.leftSizeBox{
+    flex: 1 1;
+    /* border: 1px solid red; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px 0px;
+}
+
+.leftSizeBox p{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 49);
+}
+
+.leftSizeBox .sizeBtnConatiner{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.sizeBtnConatiner .size{
+   width: 30px;
+   height: 30px;
+   border-radius:5px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sizeBtnConatiner .size:nth-child(1){
+    background-color: rgba(0, 0, 5, 0.986);
+}
+
+.sizeBtnConatiner .size:nth-child(2){
+    background-color: grey;
+}
+
+.sizeBtnConatiner .size:nth-child(3){
+    background-color: grey;
+}
+
+
+
+.rightSizeBox{
+    flex: 1 1;
+    /* border: 1px solid red; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px 0px;
+}
+
+.rightSizeBox p{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 49);
+}
+
+.colorBtnConatiner{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.colorBtnConatiner .color{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+
+.colorBtnConatiner .color:nth-child(1){
+    background-color: rgb(0, 0, 43);
+}
+
+.colorBtnConatiner .color:nth-child(2){
+    background-color: rgb(46, 219, 12);
+}
+
+.colorBtnConatiner .color:nth-child(3){
+    background-color: rgb(153, 0, 0);
+}
+
+/* ============== detaiils page cart container start ============ */
+.cartContainer{
+    width: 100%;
+    padding: 10px 0px;
+    /* border: 1px solid red; */
+    gap: 5px;
+    height: auto;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.cartHeading{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cartHeading p:nth-child(1){
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(5, 4, 4, 0.945);
+}
+
+.cartHeading span{
+    font-size: 20px;
+}
+
+.cartHeading p:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(20, 19, 19, 0.842);
+}
+
+.cartControl{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.increased, .decreased{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.quantityCount{
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(0, 0, 43);
+    justify-content: center;
+}
+
+.increased{
+    background-color: rgb(28, 236, 28);
+    color: aliceblue;
+}
+
+.increased:active, .decreased:active{
+    transform: scale(0.9);
+}
+
+.decreased{
+    background-color: red;
+    color: aliceblue;
+}
+
+.addToCartBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 12px;
+    margin-left: 12px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    color:  rgb(28, 236, 28);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.addToCartBtn:hover{
+    background-color: rgb(28, 236, 28);
+    color: aliceblue;
+    border: none;
+}
+
+.addToCartBtn:active{
+    transform: scale(0.85);
+}
+
+
+.descriptionContainer p{
+    font-size: 14px;
+    color: gray;
+    text-align: justify;
+}
+
+/* ================= botton reviews container and riviews ==================== */
+.reviewsContainer{
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 12px;
+    position: relative;
+}
+
+.reviewHeaderDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.reviewHeaderDiv h3{
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+}
+
+.addReviewBtn{
+    padding: 5px 12px;
+    color: rgb(28, 236, 28);
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.addReviewBtn:hover{
+    color: aliceblue;
+    background-color: rgb(28, 236, 28);
+
+}
+
+.addReviewBtn:active{
+    transform: scale(0.85);
+}
+
+
+
+
+.userImageDiv {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+   
+}
+
+.userImageDiv::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #bef00a, #06d421);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.userImageDiv img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 3px); /* Adjust to consider the padding */
+    height: calc(100% - 3px); /* Adjust to consider the padding */
+    border-radius: 50%;
+    object-fit: cover;
+    background-clip: padding-box;
+}
+
+.reviewBoxWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.userNameAndReview{
+    flex: 1 1;
+
+    min-width: 300px;
+}
+
+.userNameAndReview p:nth-child(1){
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 43, 0.884);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.userNameAndReview p:nth-child(2){
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+    width: 80%;
+}
+
+.reviewDate{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(170, 168, 168);
+}
+
+
+.borderButton {
+    border: 1px solid #ccc; /* Customize the border style as needed */
+    display: block;
+    width: 100%;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+
+

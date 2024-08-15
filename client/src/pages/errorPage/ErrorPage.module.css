@@ -1,0 +1,47 @@
+.errorPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #fff;
+  }
+  
+  .errorContent {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .errorTitle {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .errorMessage {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .homeButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homeButton:hover {
+    background-color: #555;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

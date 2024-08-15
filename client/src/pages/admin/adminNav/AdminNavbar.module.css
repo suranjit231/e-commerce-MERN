@@ -1,0 +1,169 @@
+.adminNavContainer {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+   
+    padding: 5px 10px;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.leftAdminNavbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 50%;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    height: 32px;
+    padding: 5px;
+    width: 37px;
+    cursor: pointer;
+}
+
+.adminLogo {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.adminLogo a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navMenu span {
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+}
+
+.searchDiv {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.searchDiv input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border: 0.5px solid grey;
+    flex: 1;
+}
+
+.searchIcon {
+    position: absolute;
+    color: rgba(20, 14, 14, 0.932);
+    right: 7px;
+    font-size: 12px;
+}
+
+/* Right Navbar */
+
+.rightAdminNav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notificatonBell {
+    position: relative;
+}
+
+.notificatonBell .notifyCount {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid red;
+    color: aliceblue;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.notificatonBell i {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.adminImage {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: rgb(0, 224, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .leftAdminNavbar {
+        min-width:200px ;
+
+    }
+
+    .adminLogo{
+        font-size: 14px;
+    }
+
+    .navMenu{
+        height: 18;
+        width: 18;
+        justify-content: space-between;
+       
+    }
+
+    .notificatonBell i{
+        font-size: 25px ;
+    }
+
+    .notificatonBell .notifyCount{
+        width: 15px;
+        height: 15px;
+    }
+
+    .searchDiv input{
+        display: none;
+
+    }
+
+    .searchDiv i{
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    .adminImage{
+        height: 30px;
+        width: 30px;
+    }
+
+   
+   
+
+   
+}

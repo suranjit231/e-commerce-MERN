@@ -1,0 +1,351 @@
+.orderPageContainer {
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    /* background: url("https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-nature-wallpapers-image_2683049.jpg"); */
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: moveBackground 10s linear infinite;
+    gap: 10px;
+    background-color: seashell;
+  }
+
+  .spinnerContainer{
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes moveBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -100%;
+    }
+  }
+  
+
+  /* ============== no order ========== */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.NoOrder {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(212, 0, 0);
+    text-align: center;
+    position: relative;
+    top: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid rgb(212, 0, 0);
+    width: 0; /* Initially set the width to 0 */
+    animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+}
+
+  /* =========no order end here ====== */
+  
+
+  .orderBoxWrapper {
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    min-width: 300px;
+  }
+  
+  /* ============ order list headeing section ========= */
+  .orderBoxHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .topHeader p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 15);
+  }
+  
+  .leftTop {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .printInvoice {
+    border: 1px solid rgba(128, 128, 128, 0.842);
+    padding: 3px 7px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .printInvoice span {
+    font-size: 10px;
+    margin-left: 3px;
+    font-weight: 500;
+  }
+  
+  .printInvoice i {
+    font-size: 14px;
+    color: rgb(65, 62, 62);
+  }
+  
+  .trackOrderButton {
+    display: flex;
+    align-items: center;
+    background-color: rgba(11, 212, 21, 0.719);
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.911);
+  }
+  
+  .trackOrderButton span {
+    font-size: 10px;
+    margin-right: 3px;
+    font-weight: 500;
+    color: aliceblue;
+  }
+  
+  .trackOrderButton i {
+    font-size: 14px;
+    color: rgb(65, 62, 62);
+  }
+  
+  .secondTopHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .orderDate {
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .deliveryDate {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .flightIcon {
+    position: relative;
+    transform: rotate(-90deg);
+    font-weight: 400;
+    margin-right: 5px;
+    color: rgba(11, 212, 21, 0.719);
+    font-size: 14px;
+  }
+  
+  .deliveryDate span:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(11, 212, 21, 0.719);
+  }
+  
+  .deliveryDate span:nth-child(3) {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(11, 212, 21, 0.719);
+    margin-left: 3px;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+  }
+  
+  /* ========== order list heading section end here ============ */
+  .orderBoxMain {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .orderBox {
+    height: 80px;
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .leftOrderBox {
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .imgBox {
+    height: 100%;
+    width: 100px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .productName {
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  .rightOrderBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .price {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .qty {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .qty span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* ========== main order section end here ============ */
+  .orderBoxFooter {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* .footerOrderDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  } */
+  
+  .paymentDiv,
+  .addressDiv{
+    width: 32%;
+    /* text-align: center; */
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    min-width: 100px;
+    flex: 1;
+    height: 100px;
+  }
+  
+  .paymentDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .creditcard {
+    position: relative;
+    background: linear-gradient(to right, #0091d8, #00447a);
+    width: 90%;
+    height: 90%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .provider {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .goodThroughLabel,
+  .goodThroughValue,
+  .holder,
+  .validity,
+  .select {
+    display: none;
+  }
+  
+  .addressDiv {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .totalPriceDiv {
+    font-size: 14px;
+    font-weight: 600;
+    height: auto;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  

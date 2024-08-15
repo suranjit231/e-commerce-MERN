@@ -1,0 +1,16 @@
+/* src/components/Stars.module.css */
+.fullStar {
+    color: gold;
+}
+
+.halfStar {
+    color: gold;
+}
+
+.emptyStar {
+    color: lightgray;
+}
+
+.ratingContainer {
+    display: flex;
+}
