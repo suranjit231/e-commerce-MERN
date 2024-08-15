@@ -24,7 +24,7 @@ This is a full-featured e-commerce website built using the MERN stack. It includ
 ### Clone the Repository
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/suranjit231/e-commerce-MERN.git
 ```
 ### Backend configuration
 1. Open another terminal and navigate to the backend directory:
